@@ -5,6 +5,8 @@ import { fetchStatistik, fetchLayanan, fetchTrackerStatus, fetchPenduduk } from 
 import { renderStatistikCard, renderLayananCard, renderTrackerResult } from './components.js';
 
 // --- Router / Section Manager ---
+let globalLayananData = [];
+
 const sections = ['beranda', 'profil', 'layanan', 'organisasi', 'kontak', 'admin-dashboard', 'admin-dms', 'admin-penduduk'];
 
 function navigateTo(sectionId) {
@@ -120,8 +122,8 @@ async function initData() {
   // Render Layanan
   const layananContainer = document.getElementById('layanan-container');
   if (layananContainer) {
-    const layanan = await fetchLayanan();
-    layananContainer.innerHTML = layanan.map(renderLayananCard).join('');
+    globalLayananData = await fetchLayanan();
+    layananContainer.innerHTML = globalLayananData.map(renderLayananCard).join('');
   }
 }
 
@@ -223,6 +225,23 @@ function setupEventListeners() {
     document.getElementById('input-nik-modal').value = '';
     document.getElementById('input-keperluan').value = '';
     document.getElementById('nik-error').classList.add('hidden');
+
+    // Generate Dynamic Upload Fields
+    const reqContainer = document.getElementById('dynamic-requirements-container');
+    if (reqContainer) {
+      reqContainer.innerHTML = '';
+      const selectedLayanan = globalLayananData.find(l => l.nama === layananName);
+      if (selectedLayanan && selectedLayanan.persyaratan) {
+        selectedLayanan.persyaratan.forEach(req => {
+          reqContainer.innerHTML += `
+            <div>
+              <label class="block text-xs font-semibold text-gray-600 mb-1">Unggah ${req} <span class="text-red-500">*</span></label>
+              <input type="file" required class="w-full text-sm text-gray-500 file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-medium file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 border border-gray-200 rounded-md p-1 outline-none focus:border-primary transition" />
+            </div>
+          `;
+        });
+      }
+    }
 
     modal.classList.remove('hidden');
     // Trigger transition
