@@ -1,0 +1,8 @@
+{
+  "statistik": [
+    { "id": 1, "icon": "users", "angka": "2.847", "label": "Jumlah Penduduk" },
+    { "id": 2, "icon": "home", "angka": "724", "label": "Kepala Keluarga" },
+    { "id": 3, "icon": "file-text", "angka": "150+", "label": "Layanan/Bulan" },
+    { "id": 4, "icon": "building-2", "angka": "12", "label": "Program Pembangunan" }
+  ]
+}

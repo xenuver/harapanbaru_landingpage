@@ -1,0 +1,35 @@
+{
+  "61710123456789": {
+    "nik": "61710123456789",
+    "nama": "Budi Santoso",
+    "noKk": "61710987654321",
+    "tempatLahir": "Pontianak",
+    "tanggalLahir": "1985-08-17",
+    "jenisKelamin": "Laki-laki",
+    "alamat": "Jl. Kesejahteraan No. 45, RT 03/RW 02",
+    "pekerjaan": "Karyawan Swasta",
+    "status": "Kawin"
+  },
+  "61710987654321": {
+    "nik": "61710987654321",
+    "nama": "Siti Rahayu",
+    "noKk": "61710987654321",
+    "tempatLahir": "Singkawang",
+    "tanggalLahir": "1988-12-05",
+    "jenisKelamin": "Perempuan",
+    "alamat": "Jl. Kesejahteraan No. 45, RT 03/RW 02",
+    "pekerjaan": "Mengurus Rumah Tangga",
+    "status": "Kawin"
+  },
+  "12345678901234": {
+    "nik": "12345678901234",
+    "nama": "Ahmad Fauzi",
+    "noKk": "12345678909876",
+    "tempatLahir": "Sintang",
+    "tanggalLahir": "1995-03-22",
+    "jenisKelamin": "Laki-laki",
+    "alamat": "Jl. Pembangunan No. 12, RT 01/RW 01",
+    "pekerjaan": "Wiraswasta",
+    "status": "Belum Kawin"
+  }
+}

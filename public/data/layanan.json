@@ -1,0 +1,130 @@
+{
+  "layanan": [
+    {
+      "id": "ktp",
+      "nama": "Kartu Tanda Penduduk (KTP)",
+      "icon": "id-card",
+      "color": "blue",
+      "persyaratan": [
+        "Surat pengantar dari RT/RW",
+        "Kartu Keluarga asli",
+        "Foto 3x4 (2 lembar)",
+        "Akta kelahiran / Ijazah (untuk pertama kali)"
+      ],
+      "alur": [
+        "Warga mengajukan permohonan secara online/langsung ke kantor desa",
+        "Petugas memeriksa kelengkapan berkas",
+        "Data diinput ke sistem kependudukan",
+        "Dokumen diteruskan ke Dukcapil",
+        "KTP diterbitkan dan diserahkan ke warga"
+      ],
+      "estimasi": "7–14 hari kerja",
+      "statusSistem": "Tersedia Online",
+      "statusColor": "green"
+    },
+    {
+      "id": "kk",
+      "nama": "Kartu Keluarga (KK)",
+      "icon": "users-round",
+      "color": "green",
+      "persyaratan": [
+        "KTP semua anggota keluarga",
+        "Akta nikah / cerai (jika ada perubahan)",
+        "Akta kelahiran anak (untuk penambahan anggota)",
+        "Surat pengantar RT/RW"
+      ],
+      "alur": [
+        "Pelaporan perubahan data keluarga melalui portal atau langsung",
+        "Verifikasi data oleh Kepala Seksi Pemerintahan",
+        "Data disinkronisasi dengan sistem Dukcapil",
+        "Pengesahan digital oleh Kepala Desa (Tanda Tangan Elektronik)",
+        "KK baru diterbitkan dan dikirimkan ke warga"
+      ],
+      "estimasi": "5–10 hari kerja",
+      "statusSistem": "Tersedia Online",
+      "statusColor": "green"
+    },
+    {
+      "id": "akta-kelahiran",
+      "nama": "Akta Kelahiran",
+      "icon": "baby",
+      "color": "yellow",
+      "persyaratan": [
+        "Surat keterangan lahir dari bidan/rumah sakit",
+        "KTP kedua orang tua",
+        "Kartu Keluarga",
+        "Akta nikah orang tua"
+      ],
+      "alur": [
+        "Orang tua mengunggah dokumen melalui portal desa",
+        "Surat pengantar diterbitkan secara otomatis",
+        "Dokumen dikirim ke Dukcapil secara digital",
+        "Akta Kelahiran diterbitkan oleh Dukcapil"
+      ],
+      "estimasi": "3–7 hari kerja",
+      "statusSistem": "Tersedia Online",
+      "statusColor": "green"
+    },
+    {
+      "id": "surat-pindah",
+      "nama": "Surat Pindah Domisili",
+      "icon": "arrow-right-left",
+      "color": "orange",
+      "persyaratan": [
+        "KTP dan KK asli",
+        "Surat pengantar RT/RW",
+        "Dokumen tujuan pindah (jika ada)"
+      ],
+      "alur": [
+        "Pengajuan permohonan surat pindah melalui portal desa",
+        "Persetujuan digital secara paralel: RT → RW → Kepala Seksi → Kepala Desa",
+        "Surat pindah diterbitkan dalam format TTE",
+        "Konfirmasi elektronik dikirim ke desa/kelurahan tujuan",
+        "Status kependudukan diperbarui otomatis"
+      ],
+      "estimasi": "3–5 hari kerja",
+      "statusSistem": "Tersedia Online",
+      "statusColor": "green"
+    },
+    {
+      "id": "sktm",
+      "nama": "Surat Keterangan Tidak Mampu (SKTM)",
+      "icon": "clipboard-list",
+      "color": "pink",
+      "persyaratan": [
+        "KTP dan KK",
+        "Surat pengantar RT/RW",
+        "Data penghasilan keluarga"
+      ],
+      "alur": [
+        "Pengajuan permohonan ke kantor desa",
+        "Verifikasi data sosial ekonomi oleh Kepala Seksi Kesejahteraan",
+        "Penandatanganan oleh Kepala Desa",
+        "SKTM diserahkan ke pemohon"
+      ],
+      "estimasi": "1–3 hari kerja",
+      "statusSistem": "Tersedia di Kantor Desa",
+      "statusColor": "yellow"
+    },
+    {
+      "id": "domisili",
+      "nama": "Surat Keterangan Domisili",
+      "icon": "map-pin",
+      "color": "purple",
+      "persyaratan": [
+        "KTP",
+        "Surat pengantar RT/RW",
+        "Bukti tempat tinggal (tagihan listrik/air)"
+      ],
+      "alur": [
+        "Pengajuan ke kantor desa atau secara online",
+        "Verifikasi oleh petugas pelayanan",
+        "Penandatanganan oleh Kepala Desa",
+        "Surat diserahkan atau dikirim secara digital"
+      ],
+      "estimasi": "1–2 hari kerja",
+      "statusSistem": "Tersedia Online",
+      "statusColor": "green"
+    }
+  ]
+}

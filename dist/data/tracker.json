@@ -1,0 +1,30 @@
+{
+  "DHB-2026-001": { 
+    "nama": "Budi Santoso", 
+    "layanan": "KTP", 
+    "status": "Sedang diproses di Dukcapil", 
+    "estimasi": "5 hari lagi",
+    "tanggal": "2026-06-05"
+  },
+  "DHB-2026-002": { 
+    "nama": "Siti Rahayu", 
+    "layanan": "Kartu Keluarga", 
+    "status": "Selesai - Siap diambil", 
+    "estimasi": "-",
+    "tanggal": "2026-06-01"
+  },
+  "DHB-2026-003": { 
+    "nama": "Ahmad Fauzi", 
+    "layanan": "Akta Kelahiran", 
+    "status": "Menunggu verifikasi berkas", 
+    "estimasi": "2–3 hari lagi",
+    "tanggal": "2026-06-09"
+  },
+  "DHB-2026-004": { 
+    "nama": "Dewi Lestari", 
+    "layanan": "Surat Pindah", 
+    "status": "Dalam proses persetujuan Kepala Desa", 
+    "estimasi": "1 hari lagi",
+    "tanggal": "2026-06-08"
+  }
+}
